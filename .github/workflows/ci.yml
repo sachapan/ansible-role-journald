@@ -34,8 +34,8 @@ jobs:
           PY_COLORS: "1"
           ANSIBLE_FORCE_COLOR: "1"
           MOLECULE_DISTRO: ${{ matrix.distro }}
-release:
-  needs:
+  release:
+    needs:
       - test
     runs-on: ubuntu-latest
     steps:
